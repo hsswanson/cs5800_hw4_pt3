@@ -1,0 +1,25 @@
+@startuml
+'https://plantuml.com/object-diagram
+
+
+object Ship1{
+shipName:Titanic
+yearBuilt:March31st,1909
+}
+object Ship2{
+shipName:MVGemini
+yearBuilt:May30th,1991
+maxPassengers:100
+}
+object Ship3{
+shipName:EverGiven
+yearBuilt:September25th,2018
+cargoCapacityTonnage:220940
+}
+
+map Ships{
+Ships[0] *-> Ship1
+Ships[1] *-> Ship2
+Ships[2] *-> Ship3
+}
+@enduml
