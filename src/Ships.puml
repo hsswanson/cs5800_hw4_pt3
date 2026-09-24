@@ -2,27 +2,27 @@
 'https://plantuml.com/class-diagram
 
 +class Ship{
-#String shipName
-#String yearBuilt
-+String yearBuilt()
-+String getShipName()
-+void setShipName(String shipName)
-+void setYearBuilt(String yearBuilt)
-+String toString()
+#shipName:String
+#yearBuilt:String
++yearBuilt():String
++getShipName():String
++setShipName(String shipName):void
++setYearBuilt(String yearBuilt):void
++toString():String
 }
 
 +class CruiseShip{
-#int passengers
-+int getPassengers()
-+void setPassengers(int passengers)
-+String toString()
+#passengers:int
++getPassengers():int
++setPassengers(int passengers):void
++toString():String
 }
 
 +class CargoShip{
-#int cargoTonnage
-+int getCargoTonnage()
-+void setCargo_tonnage(int cargoTonnage)
-+String toString()
+#cargoTonnage:int
++getCargoTonnage():int
++setCargo_tonnage(int cargoTonnage):void
++toString():String
 }
 Ship <|-- CargoShip
 Ship <|-- CruiseShip
